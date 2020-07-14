@@ -1,0 +1,10 @@
+:root {
+  --primary-font: 'PT Sans', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --tertiary-font: 'Pacifico', cursive;
+  --bg-color: #fbfafa;
+  --primary-font-color: #8c7d73;
+  --landing-page-font-color: #e5e5e5;
+  --landing-page-secondary-font-color: #8a8282;
+  --primary-header-font-color: #1c1917;
+}
