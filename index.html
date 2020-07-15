@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/ff0ee12b4e.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?sensor=false"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>capenwoods</title>
@@ -161,8 +162,17 @@
           <button type="submit">Send Message</button>
         </form>
       </section>
-      <section class="maps"></section>
+      <section class="maps">
+        <div id="map"></div>
+        <div id="driving-direction"></div>
+      </section>
     </main>
-    <script src="main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtOJfpJ9LaRu4JG-S4-byHD3_fKzgpJYA"
+      type="text/javascript"
+    ></script>
+    <script async defer src="main.js"></script>
   </body>
 </html>
