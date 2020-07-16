@@ -12,7 +12,7 @@ function smoothScroll() {
   callScroll = requestAnimationFrame(smoothScroll);
 }
 
-smoothScroll();
+// smoothScroll();
 const content = document.querySelectorAll('section');
 let currentPos = window.pageYOffset;
 const callDistort = function () {
@@ -28,7 +28,7 @@ document.body.onload = () => {
 
   animateText();
   scrollAnimation();
-  callDistort();
+  // callDistort();
 };
 // animation :- nav
 
