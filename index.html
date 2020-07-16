@@ -9,6 +9,8 @@
       src="https://kit.fontawesome.com/ff0ee12b4e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <!-- <script src="https://maps.google.com/maps/api/js?sensor=false"></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,11 +36,11 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="smooth-scrolls-wrapper">
       <section class="landing_page flex_col flex_center">
         <article class="flex_col">
-          <header><h1>Welcome to Carpenwood</h1></header>
-          <p>Your one stop wood works store</p>
+          <header><h1 id="welcome_header"></h1></header>
+          <p class="asidelanding"></p>
           <div class="cta">
             <button class="btn btn_primary">Message</button>
           </div>
@@ -47,7 +49,7 @@
       <section class="about_us">
         <article class="text flex_col">
           <header>
-            <h1>About <span>Us</span></h1>
+            <h1 id="about_text">About <span>Us</span></h1>
           </header>
           <aside>
             We have been making decoration designs with our professional team
@@ -81,7 +83,7 @@
               officiis?
             </p>
           </div>
-          <div class="card">
+          <div class="card" id="second_img">
             <img src="./img/Vector (1).svg" alt="image" />
             <h1>Interior</h1>
             <p>
@@ -89,7 +91,7 @@
               officiis?
             </p>
           </div>
-          <div class="card">
+          <div class="card" id="third_img">
             <img src="./img/Vector (2).svg" alt="image" />
             <h1>Interior</h1>
             <p>
@@ -162,17 +164,12 @@
           <button type="submit">Send Message</button>
         </form>
       </section>
-      <section class="maps">
-        <div id="map"></div>
-        <div id="driving-direction"></div>
-      </section>
     </main>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtOJfpJ9LaRu4JG-S4-byHD3_fKzgpJYA"
-      type="text/javascript"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
     <script async defer src="main.js"></script>
   </body>
 </html>
