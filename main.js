@@ -116,7 +116,7 @@ function ourProductAnimation() {
       start: '-=300 center',
       end: '+=600',
       pinSpacing: false,
-      markers: true,
+      // markers: true,
     },
   });
   tl.from('.our_products aside div', {
@@ -158,7 +158,7 @@ const contactformAnimation = () => {
       start: 'top top',
       end: '+=500',
       pinSpacing: false,
-      markers: true,
+      // markers: true,
     },
   });
   tl.from('form', {
