@@ -582,3 +582,7 @@ button[type='submit'] {
 .maps {
   height: 80vh;
 }
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
