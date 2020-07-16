@@ -8,6 +8,22 @@ body {
   background: var(--bg-color);
   overflow-x: hidden;
 }
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000000000;
+  background: green;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.651) 0%,
+      rgba(28, 25, 23, 0.75) 100%
+    ),
+    url('./img/background.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* .smooth-scroll-wrapper {
   position: relative;
   width: 100vw;

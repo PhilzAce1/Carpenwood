@@ -27,6 +27,7 @@ document.body.onload = () => {
   animateText();
   scrollAnimation();
   callDistort();
+  document.querySelector('.loader').style.display = 'none';
 };
 // animation :- nav
 
