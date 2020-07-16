@@ -24,10 +24,11 @@ const callDistort = function () {
   requestAnimationFrame(callDistort);
 };
 document.body.onload = () => {
+  document.querySelector('.loader').style.display = 'none';
+
   animateText();
   scrollAnimation();
   callDistort();
-  document.querySelector('.loader').style.display = 'none';
 };
 // animation :- nav
 
