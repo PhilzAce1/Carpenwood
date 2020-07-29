@@ -22,7 +22,6 @@ function smoothScroll() {
 function nav() {
   let toggle = document.querySelector('#toggle');
   let toggleOff = document.querySelector('.mobile_nav #close');
-  console.log(toggleOff);
   const tl = gsap.timeline({ paused: true, reversed: true });
 
   toggle.addEventListener('click', () => {
