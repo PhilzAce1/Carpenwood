@@ -1,3 +1,10 @@
+document.body.onload = () => {
+  document.querySelector('.loader').style.display = 'none';
+  animateText();
+  scrollAnimation();
+  nav();
+  // callDistort();
+};
 //import dom elements
 const body = document.body;
 let scrollWrap = document.getElementsByClassName('smooth-scrolls-wrapper')[0];
@@ -11,6 +18,37 @@ function smoothScroll() {
   scrollWrap.style.transform = scroll;
   callScroll = requestAnimationFrame(smoothScroll);
 }
+// nav
+function nav() {
+  let toggle = document.querySelector('#toggle');
+  let toggleOff = document.querySelector('.mobile_nav #close');
+  console.log(toggleOff);
+  const tl = gsap.timeline({ paused: true, reversed: true });
+
+  toggle.addEventListener('click', () => {
+    if (tl.reversed()) {
+      tl.play();
+    }
+    tl.to('nav.mobile_nav', {
+      display: 'inline-block',
+    })
+      .to('.bx', { scale: 1, stagger: 0.2 })
+      .from('.links li', {
+        x: 100,
+        opacity: 0,
+        stagger: 0.2,
+      })
+      .from('#close', {
+        opacity: 0,
+      });
+  });
+
+  //close nav
+
+  toggleOff.addEventListener('click', () => {
+    tl.reverse();
+  });
+}
 
 // smoothScroll();
 const content = document.querySelectorAll('section');
@@ -22,13 +60,6 @@ const callDistort = function () {
   [...content].forEach((x) => (x.style.transform = 'skewY(' + speed + 'deg)'));
   currentPos = newPos;
   requestAnimationFrame(callDistort);
-};
-document.body.onload = () => {
-  document.querySelector('.loader').style.display = 'none';
-
-  animateText();
-  scrollAnimation();
-  // callDistort();
 };
 // animation :- nav
 
