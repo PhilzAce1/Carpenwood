@@ -120,10 +120,10 @@ const ourServiceAnimation = () => {
       trigger: '.our_services',
       id: 'service',
       toggleActions: 'restart none reverse none',
-      start: '-=550 center',
+      start: 'top center',
       end: '+=500',
       pinSpacing: false,
-      //   markers: true,
+      // markers: true,
     },
   });
   tl.from('.our_services article div:first-of-type', {
@@ -144,9 +144,9 @@ function ourProductAnimation() {
     scrollTrigger: {
       trigger: '.our_products',
       id: 'product',
-      toggleActions: 'restart restart reverse restart',
-      start: '-=300 center',
-      end: '+=600',
+      toggleActions: 'restart none reverse none',
+      start: 'top center',
+      end: '+=700',
       pinSpacing: false,
       // markers: true,
     },
@@ -161,7 +161,7 @@ function ourProductAnimation() {
   });
 }
 const asideAnimation = () => {
-  gsap.from('.aside h1', {
+  gsap.to('.aside h1', {
     scrollTrigger: {
       trigger: '.aside',
       id: 'aside',
@@ -169,7 +169,7 @@ const asideAnimation = () => {
       start: '-=100 center',
       end: '+=500',
       pinSpacing: false,
-      //   markers: true,
+      // markers: true,
     },
     duration: 1,
     text: {
@@ -177,17 +177,16 @@ const asideAnimation = () => {
       delimiter: '',
     },
     ease: 'power2',
-    delay: -0.25,
   });
 };
 
 const contactformAnimation = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.contact_us',
+      trigger: 'section.contact_us',
       id: 'contactfrom',
       toggleActions: 'restart none reverse none',
-      start: 'top top',
+      start: 'top center',
       end: '+=500',
       pinSpacing: false,
       // markers: true,
@@ -204,7 +203,7 @@ function scrollAnimation() {
   ourServiceAnimation();
   ourProductAnimation();
   asideAnimation();
-  // contactformAnimation();
+  contactformAnimation();
 }
 
 // animation :- GSAP - text
