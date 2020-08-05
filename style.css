@@ -548,7 +548,7 @@ section {
   padding: 10px;
 }
 .meet_the_team aside .card {
-  height: 400px;
+  height: 300px;
   width: 100%;
   margin: 10px 0;
   background: #ffffcc;
@@ -573,7 +573,7 @@ section {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 22px;
+  /* line-height: 22px; */
   text-align: center;
 
   /* neutrl-500 */
@@ -582,7 +582,7 @@ section {
 }
 @media (min-width: 800px) {
   .meet_the_team aside {
-    height: 52vh;
+    height: 62vh;
     justify-content: space-around;
     display: flex;
     width: 92%;
@@ -609,6 +609,8 @@ form .names {
 input {
   height: 40px;
   margin-bottom: 20px;
+  color: black;
+  padding: 10px;
 }
 textarea {
   width: 100%;
